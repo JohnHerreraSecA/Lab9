@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Castle Photo Gallery</title>
+  <link rel="stylesheet" href="photo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="photo.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Castle Photo Gallery</h1>
+    <p>Explore my collection of castle images ranging from landscapes to portraits.</p>
+  </header>
+  <nav>
+    <button class="filter" onclick="filterGallery('all')">All</button>
+    <button class="filter" onclick="filterGallery('landscapes')">Landscapes</button>
+    <button class="filter" onclick="filterGallery('portraits')">Portraits</button>
+  </nav>
+  <main>
+    <section id="gallery">
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.mygermanyvacation.com/wp-content/uploads/2022/05/Lichtenstein-Castle.png" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.civitatis.com/blog/wp-content/uploads/2020/12/castillo-chambord-loira.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.germany.travel/media/redaktion/schloesser_burgen_content/look_71340952.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="portraits">
+            <img src="https://neuschwansteincastle.net/wp-content/uploads/2023/01/neuschwanstein-germany.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.travelandleisure.com/thmb/PhH6G9nzOI77i9W6C7uw1UGNyXQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/header-mont-saint-michel-FRACASTLE0422-78fe1807860d4b46b7721bb908ca663e.jpg" alt="">
+            
+        </div>
+        
+        <div class="photo" data-category="portraits">
+            <img src="https://i.redd.it/l2ttgckmbn071.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="portraits">
+            <img src="https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2023/10/Best-Castles-In-France-To-Visit-8.jpg?resize=1000%2C1500&ssl=1" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.visiteuropeancastles.com/wp-content/uploads/2022/04/chillon-castle-swiss-castles-around-lake-geneva-visiteuropeancastles-1200x801.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="portraits">
+            <img src="https://images.squarespace-cdn.com/content/v1/595f9544b6ac50db7dd3e6df/1506433752701-O7B9SQZHTMVD63GVEF3V/IMG_3571-Pano.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.travelandleisure.com/thmb/2IiTMExJiV8ytIGchE92Hta1qn0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eilean-donan-castle-scotland-SCOTCASTLES0522-c65c1972af1b41008043479e92e2c2bf.jpg" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://www.scotsman.com/webimg/b25lY21zOjBjM2RhZTAxLWRhNDItNGEyZS04NjBiLWM3OTdjODM1MDU3ODo1MmJiODJkYy1hOTQ0LTQxODItOWI2Mi02MThiMGUxOWYwMjA=.jpg?crop=3:2&trim=&width=640" alt="">
+            
+        </div>
+        <div class="photo" data-category="landscapes">
+            <img src="https://savingcastles.com/wp-content/uploads/2023/03/Eilean-Donan-1440x1079-1.jpg" alt="">
+           
+        </div>
+    </section>
+  </main>
+  <footer>Copyright © 2024 John Herrera</footer>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+</body>
+</html>
